@@ -10,37 +10,14 @@ import Foundation
 
 class TutorialThemeSettings {
     
-    var themeForegroundColor = UIColor.yellowColor()
-    var themeBackgroundColor = UIColor.blackColor()
-    
+    var themeForegroundColor = UIColor(red: 191/255, green: 154/255, blue: 76/255, alpha: 1)
+    var themeBackgroundColor = UIColor(red: 165/255, green: 3/255, blue: 16/255, alpha: 1)
+
     init() {
 
-        let theme = TKBannerTutorialView.defaultTheme()
-        themeForegroundColor = theme.foregroundColor
-        themeBackgroundColor = theme.backgroundColor
-
-        // check to see if themes have been previously saved; if not, use defaults
-        //        let prefs = NSUserDefaults.standardUserDefaults()
-        //
-        //        prefs.setValue("Berlin", forKey: "userCity")
-        //        //This code saves the value "Berlin" to a key named "userCity".
-        
-        //        // reading data
-        //        if let city = prefs.stringForKey("userCity"){
-        //            println("The user has a city defined: " + city)
-        //        }else{
-        //            //Nothing stored in NSUserDefaults yet. Set a value.
-        //            prefs.setValue("Berlin", forKey: "userCity")
-        //        }
-        
-//        
-//        let prefs = NSUserDefaults.standardUserDefaults()
-//        if let color = prefs.stringForKey("foreground") {
-//            themeForegroundColor = color
-//        } else {
-//            //Nothing stored in NSUserDefaults yet. Set a value.
-//            themeForegroundColor = theme.foregroundColor
-//        }
+//        let theme = TKBannerTutorialView.defaultTheme()
+        themeForegroundColor = UIColor(red: 191/255, green: 154/255, blue: 76/255, alpha: 1)
+        themeBackgroundColor = UIColor(red: 165/255, green: 3/255, blue: 16/255, alpha: 1)
         
     }
     
