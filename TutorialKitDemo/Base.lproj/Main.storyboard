@@ -158,7 +158,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-wh-ND1">
                                 <rect key="frame" x="134" y="273" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -222,12 +222,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github.com/TutorialKit/TutorialKitDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG2-4q-HQB">
-                                <rect key="frame" x="31.5" y="483" width="257" height="16"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -235,10 +229,8 @@
                             <constraint firstAttribute="trailing" secondItem="4jb-tI-NZ9" secondAttribute="trailing" constant="20" id="20n-rs-nOx"/>
                             <constraint firstItem="trD-oE-RSW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="18" id="APo-cM-uQI"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4jb-tI-NZ9" secondAttribute="bottom" constant="120" id="L5P-Q2-ruA"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="aG2-4q-HQB" secondAttribute="bottom" constant="20" id="Sum-cV-a7r"/>
                             <constraint firstItem="4jb-tI-NZ9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="ccJ-hZ-Juh"/>
                             <constraint firstItem="4jb-tI-NZ9" firstAttribute="top" secondItem="trD-oE-RSW" secondAttribute="bottom" constant="40" id="eCh-4f-gmR"/>
-                            <constraint firstItem="aG2-4q-HQB" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="oNX-E8-bSg"/>
                             <constraint firstItem="LEt-fs-33y" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="u4s-cI-JmC"/>
                             <constraint firstItem="LEt-fs-33y" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="60" id="w6B-pL-1OP"/>
                         </constraints>
