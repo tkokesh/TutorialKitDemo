@@ -21,6 +21,7 @@
 		22E2675B1D427B83000DD04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E267591D427B83000DD04F /* Main.storyboard */; };
 		22E2675D1D427B83000DD04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E2675C1D427B83000DD04F /* Assets.xcassets */; };
 		22E267601D427B83000DD04F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E2675E1D427B83000DD04F /* LaunchScreen.storyboard */; };
+		22E3B0F71D4B965B0080071C /* TKTutorialAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E3B0F61D4B965B0080071C /* TKTutorialAsset.m */; };
 		942E5FB21D4487780069C881 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E5FB11D4487780069C881 /* SwipeViewController.swift */; };
 		942E5FB41D448FBD0069C881 /* BalloonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E5FB31D448FBD0069C881 /* BalloonViewController.swift */; };
 		942E5FB61D448FD10069C881 /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E5FB51D448FD10069C881 /* TapViewController.swift */; };
@@ -56,6 +57,8 @@
 		22E2675C1D427B83000DD04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E2675F1D427B83000DD04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E267611D427B83000DD04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E3B0F51D4B965B0080071C /* TKTutorialAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorialAsset.h; path = TutorialKit/TKTutorialAsset.h; sourceTree = "<group>"; };
+		22E3B0F61D4B965B0080071C /* TKTutorialAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTutorialAsset.m; path = TutorialKit/TKTutorialAsset.m; sourceTree = "<group>"; };
 		942E5FB11D4487780069C881 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		942E5FB31D448FBD0069C881 /* BalloonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonViewController.swift; sourceTree = "<group>"; };
 		942E5FB51D448FD10069C881 /* TapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				225CBCBB1D4317DA005E06EB /* TKTutorialView.m */,
 				228431901D43E31E00E7172A /* Label Tutorials */,
 				2284319C1D4437D100E7172A /* Gesture Tutorials */,
+				22E3B0F51D4B965B0080071C /* TKTutorialAsset.h */,
+				22E3B0F61D4B965B0080071C /* TKTutorialAsset.m */,
 				225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */,
 				225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */,
 			);
@@ -246,6 +251,7 @@
 				225CBCB81D431791005E06EB /* TKTutorial.m in Sources */,
 				94FBF7B01D432A4D00D12213 /* AppDelegate.swift in Sources */,
 				225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */,
+				22E3B0F71D4B965B0080071C /* TKTutorialAsset.m in Sources */,
 				942E5FB41D448FBD0069C881 /* BalloonViewController.swift in Sources */,
 				94FBF7B61D4336B900D12213 /* SettingsViewController.swift in Sources */,
 				225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */,

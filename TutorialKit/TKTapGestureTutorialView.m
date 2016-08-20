@@ -39,7 +39,7 @@
 
     [UIView animateWithDuration:0.25 animations:^(void)
      {
-         tutorialView.alpha = 0.5;
+         tutorialView.alpha = 1.0;
      }];
 
     return tutorialView;
