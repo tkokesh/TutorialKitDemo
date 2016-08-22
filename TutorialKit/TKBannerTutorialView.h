@@ -20,6 +20,8 @@ typedef enum
 
 @interface TKBannerTutorialView : TKLabelTutorialView
 
+@property (strong) UIView *blockingView;
+
 @property (weak) UIViewController *viewController;
 @property (assign) TKBannerOrientation orientation;
 

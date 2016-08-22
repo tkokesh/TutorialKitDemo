@@ -60,17 +60,29 @@
         tutorialView.frame = r;
     }
     
+    r.origin = CGPointZero;
+    tutorialView.blockingView = [[UIView alloc] initWithFrame:r];
+    tutorialView.blockingView.backgroundColor = [UIColor whiteColor];
+    [tutorialView addSubview:tutorialView.blockingView];
+    
     [viewController.view addSubview:tutorialView];
     
     CGRect newFrame = tutorialView.frame;
     if (tutorialView.orientation == kTKBannerOrientationBottom)
+    {
         newFrame.origin.y -= tutorialView.bounds.size.height;
+        r.origin.y += tutorialView.bounds.size.height;
+    }
     else
+    {
         newFrame.origin.y += tutorialView.bounds.size.height;
-    
+        r.origin.y -= tutorialView.bounds.size.height;
+    }
+
     [UIView animateWithDuration:0.5 animations:^(void)
     {
         tutorialView.frame = newFrame;
+        tutorialView.blockingView.frame = r;
     }];
     
     return tutorialView;
@@ -79,14 +91,23 @@
 - (void)end
 {
     CGRect newFrame = self.frame;
+    CGRect newBlockingFrame;
+    
     if (self.orientation == kTKBannerOrientationBottom)
+    {
         newFrame.origin.y += self.bounds.size.height;
+        newBlockingFrame = self.bounds;
+    }
     else
+    {
         newFrame.origin.y -= self.bounds.size.height;
+        newBlockingFrame = self.bounds;
+    }
     
     [UIView animateWithDuration:0.5 animations:^(void)
      {
          self.frame = newFrame;
+         self.blockingView.frame = newBlockingFrame;
      }
      completion:^(BOOL finished)
      {
