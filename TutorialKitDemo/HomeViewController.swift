@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
         let themeSettings = appDelegate.themeSettings
         theme.foregroundColor = themeSettings.themeForegroundColor
         theme.backgroundColor = themeSettings.themeBackgroundColor
-        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
+        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button! This will enter you in the grand drawing for a prize!", theme:theme, key:"Enable I win")
     }
 }
 

@@ -20,12 +20,12 @@
 + (TKTutorialTheme *)defaultTheme
 {
     TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
-
+    
     theme.backgroundColor = [UIColor colorWithWhite:0.75 alpha:1.0];
     theme.foregroundColor = [UIColor blackColor];
     theme.font = [UIFont boldSystemFontOfSize:17.0];
     theme.margin = 10;
-
+    
     return theme;
 }
 
@@ -34,11 +34,11 @@
     if ([TKTutorial keyUsed:key])
         return nil;
     [TKTutorial setKey:key];
-
+    
     CGRect r = CGRectMake(0, 0, viewController.view.bounds.size.width, theme.margin * 2);
     TKBannerTutorialView *tutorialView = [[TKBannerTutorialView alloc] initWithFrame:r];
     [TKTutorialView addTutorialView:tutorialView forKey:key];
-   
+    
     tutorialView.text = text;
     tutorialView.theme = theme;
     tutorialView.backgroundColor = tutorialView.theme.backgroundColor;
@@ -78,12 +78,12 @@
         newFrame.origin.y += tutorialView.bounds.size.height;
         r.origin.y -= tutorialView.bounds.size.height;
     }
-
+    
     [UIView animateWithDuration:0.5 animations:^(void)
-    {
-        tutorialView.frame = newFrame;
-        tutorialView.blockingView.frame = r;
-    }];
+     {
+         tutorialView.frame = newFrame;
+         tutorialView.blockingView.frame = r;
+     }];
     
     return tutorialView;
 }
@@ -109,7 +109,7 @@
          self.frame = newFrame;
          self.blockingView.frame = newBlockingFrame;
      }
-     completion:^(BOOL finished)
+                     completion:^(BOOL finished)
      {
          [self removeFromSuperview];
      }];

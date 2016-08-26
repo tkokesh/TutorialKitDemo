@@ -33,7 +33,8 @@
     CGSize size = CGSizeMake(width, 10000);
     NSDictionary *attributes = @{NSFontAttributeName: self.theme.font};
     
-    CGRect sizeRect = [self.text boundingRectWithSize:size options:0 attributes:attributes context:nil];
+    CGRect sizeRect = [self.text boundingRectWithSize:size options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:attributes context:nil];
+    sizeRect.size.height = ceilf(sizeRect.size.height);
     return sizeRect.size.height;
 }
 
